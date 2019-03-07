@@ -3584,6 +3584,33 @@
         ],
         "device_name": "STM32F303VC"
     },
+	"GENERIC_F303RB": {
+        "inherits": ["FAMILY_STM32"],
+        "core": "Cortex-M4F",
+        "extra_labels_add": [
+            "STM32F3",
+			"STM32F303",
+            "STM32F303xB",
+			"STM32F303RB"
+        ],
+        "overrides": { "lse_available": 0 },
+        "config": {
+            "clock_source": {
+                "help": "Mask value : USE_PLL_HSE_EXTC | USE_PLL_HSI",
+                "value": "USE_PLL_HSE_EXTC|USE_PLL_HSI",
+                "macro_name": "CLOCK_SOURCE"
+            }
+        },
+        "supported_toolchains": ["ARM", "uARM", "GCC_ARM", "IAR"],
+        "release_versions": ["2", "5"],
+        "device_has_add": [
+            "ANALOGOUT",
+            "CAN",
+            "CRC",
+            "MPU"
+        ],
+        "device_name": "STM32F303RB"
+    },
     "DISCO_F334C8": {
         "inherits": ["FAMILY_STM32"],
         "core": "Cortex-M4F",

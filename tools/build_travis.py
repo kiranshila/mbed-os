@@ -80,6 +80,7 @@ build_list = [
 
         { "target": "DISCO_F051R8",      "toolchains": "GCC_ARM", "libs": ["dsp"] },
         { "target": "DISCO_F303VC",      "toolchains": "GCC_ARM", "libs": ["dsp"] },
+		{ "target": "GENERIC_F303VC",    "toolchains": "GCC_ARM", "libs": ["dsp"] },
         { "target": "DISCO_F334C8",      "toolchains": "GCC_ARM", "libs": ["dsp"] },
         { "target": "DISCO_F401VC",      "toolchains": "GCC_ARM", "libs": ["dsp"] },
 
